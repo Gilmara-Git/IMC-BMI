@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IMC Kenzie</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Cálculo de IMC</h1>
+      <form>
+        <div class="container-calculator-weight">
+          <p>Digite seu peso</p>
+          <input class="weight-slider" type="range" />
+          <p>Peso Kg</p>
+          <input id="weight" class="input-number" type="number" min="0" />
+        </div>
+        <div class="container-calculator-height">
+          <p>Digite sua altura</p>
+          <input class="height-slider" type="range" />
+          <p>Altura cm</p>
+          <input id="height" class="input-number" type="text" min="0" />
+        </div>
+        <input class="button-calculate" type="button" value="Calcular" />
+        <div id="imc">
+          <div>
+            <p>IMC</p>
+            <input class="input-number" type="text" />
+          </div>
+          <div id="message"></div>
+        </div>
+      </form>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
