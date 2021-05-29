@@ -12,7 +12,7 @@
   function calculate() {
     let imc;
     if (weight.value !== "" && height.value !== "") {
-      imc = weight.value / (height.value * height.value);
+      imc = weight.value / (height.value/100 * height.value/100);
       let imcFormatted = imc.toFixed(2);
       populateImcField(imcFormatted);
       let message = "";
